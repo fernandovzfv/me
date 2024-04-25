@@ -167,7 +167,7 @@ const IndexPage = () => <Layout>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colSpan="2"></td>
+									<td colSpan="2">_</td>
 									<td>100.00</td>
 								</tr>
 							</tfoot>
@@ -213,7 +213,7 @@ const IndexPage = () => <Layout>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td colSpan="2"></td>
+									<td colSpan="2">_</td>
 									<td>100.00</td>
 								</tr>
 							</tfoot>
