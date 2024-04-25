@@ -96,3 +96,10 @@ Please create issue or open PR request for contribution.
 [![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](LICENSE)
 
 refer `LICENSE` file in this repository.
+
+# Warnings
+
+- `warn gatsby-plugin-react-helmet: Gatsby now has built-in support for modifying the document head. Learn more at https://gatsby.dev/gatsby-head`
+- `jsx-a11y/click-events-have-key-events 64:11  warning  Avoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element  jsx-a11y/no-static-element-interactions`
+- `warn /home/fernandovz/Documents/courses/spectral/src/components/Scroll.js   64:11  warning  Visible, non-interactive elements with click handlers must have at least one keyboard listener jsx-a11y/click-events-have-key-events`
+- `/home/fernandovz/Documents/courses/spectral/src/pages/Elements.js 170:10  warning  A control must be associated with a text label jsx-a11y/control-has-associated-label 216:10  warning  A control must be associated with a text label jsx-a11y/control-has-associated-label`

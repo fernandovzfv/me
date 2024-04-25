@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/sass/main.scss';
@@ -41,17 +40,8 @@ class Layout extends Component {
             }
           }
         `}
-        render={data => (
+        render={() => (
           <>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                { name: 'description', content: 'Spectral' },
-                { name: 'keywords', content: 'site, web' },
-              ]}
-            >
-              <html lang="en" />
-            </Helmet>
             <div
               className={
                 isPreloaded
@@ -75,5 +65,20 @@ class Layout extends Component {
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
+
+export const Head = () => (
+  <>
+    <title>Gatsby Starter Spectral</title>
+    <meta
+      name='description'
+      content='Spectral'
+    />
+    <meta
+      name='keywords'
+      content='site, web'
+    />
+    <html lang="en" />
+  </>
+)
 
 export default Layout;
