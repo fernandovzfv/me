@@ -12,15 +12,14 @@
   },
   "dependencies": {
     "gatsby": "^5.13.4",
-    "gatsby-plugin-manifest": "^5.0.0",
-    "gatsby-plugin-offline": "^6.0.0",
-    "gatsby-plugin-sass": "^6.0.0",
-    "node-sass": "^6.0.1",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-offline": "^6.13.2",
+    "gatsby-plugin-sass": "^6.13.1",
+    "node-sass": "^9.0.0",
     "react": "^18.3.0",
     "react-dom": "^18.3.0",
-    "react-images": "^1.1.0",
-    "react-scrollspy": "^3.4.2",
-    "sass": "^1.47.0",
+    "react-images": "^1.2.0-beta.7",
+    "sass": "^1.75.0",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {
