@@ -66,19 +66,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export const Head = () => (
-  <>
-    <title>Gatsby Starter Spectral</title>
-    <meta
-      name='description'
-      content='Spectral'
-    />
-    <meta
-      name='keywords'
-      content='site, web'
-    />
-    <html lang="en" />
-  </>
-)
-
 export default Layout;

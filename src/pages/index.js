@@ -35,20 +35,22 @@ const IndexPage = () => (
       <div className="inner">
         <header className="major">
           <h2>
-            Arcu aliquet vel lobortis ata nisl
+            Specialist in static, heat transfer and package equipment
             <br />
-            eget augue amet aliquet nisl cep donec
+            Oil & gas | Chemical | Mining
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
-            <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            Hello, I'm <strong>Fernando Vázquez</strong>. I have been working as <strong>a mechanical engineer</strong> in the <strong>oil and gas industry</strong> (and other sectors) for about <strong>twenty three years</strong>, in almost every stage of the live of a plant (Design, fabrication, inspection, installation and commissioning).
+          </p>
+          <p>
+            I have a lot of experience with mechanical <strong>equipment</strong>. I really enjoy working <strong>at the site</strong>, I mean working in <strong>construction</strong> and learning new things. I also love new <strong>challenges</strong>.
+          </p>
+          <p>
+            Proficient in mexican and international standards and codes; such as ASME, API, TEMA, and European regulations.
           </p>
         </header>
         <ul className="icons major">
-          <li>
+          {/* <li>
             <span className="icon fa-gem major style1">
               <span className="label">Lorem</span>
             </span>
@@ -62,7 +64,17 @@ const IndexPage = () => (
             <span className="icon solid fa-code major style3">
               <span className="label">Dolor</span>
             </span>
-          </li>
+          </li> */}
+          {config.socialLinks.map(social => {
+            const { style, icon, name, url } = social;
+            return (
+              <li key={url}>
+                <a href={url} className={`icon ${style} ${icon}`}>
+                  <span className="label">{name}</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
@@ -74,13 +86,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Magna primis lobortis
-            <br />
-            sed ullamcorper
+            EPC projects
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            9 years of experience in execution of EPC projects in vearious industries.
           </p>
         </div>
       </section>
@@ -90,13 +99,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Tortor dolore feugiat
-            <br />
-            elementum magna
+            Construction and Mechanical Completion
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            7 years of experience as mechanical supervisor in mechanical completion and commissioning works; ensuring quality and compliance with deadlines.
           </p>
         </div>
       </section>
@@ -106,13 +112,23 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Augue eleifend aliquet
-            <br />
-            sed condimentum
+            Construction of Pressure Vessels and Package Equipment
           </h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec hendrerit
-            imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+            5 years of experience in construction os pressure vessels and package equipment in specialized workshops.
+          </p>
+        </div>
+      </section>
+      <section className="spotlight">
+        <div className="image">
+          <img src={pic1} alt="" />
+        </div>
+        <div className="content">
+          <h2>
+            Engineering and Start-Up of Package Equipment
+          </h2>
+          <p>
+            2 years of experience in engineering and start-up of package equipment; ensuring its optimal operation.
           </p>
         </div>
       </section>
@@ -121,7 +137,7 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Accumsan mus tortor nunc aliquet</h2>
+          <h2>Experience</h2>
           <p>
             Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
             eleifend
@@ -202,5 +218,16 @@ const IndexPage = () => (
     </section>
   </Layout>
 );
+
+export const Head = () => {
+  return (
+    <>
+      <title>{config.heading}</title>
+      <meta name="description" content="Spectral" />
+      <meta name="keywords" content="site, web" />
+      <html lang="en" />
+    </>
+  );
+};
 
 export default IndexPage;
