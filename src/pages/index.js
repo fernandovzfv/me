@@ -137,21 +137,22 @@ const IndexPage = () => (
     <section id="three" className="wrapper style3 special">
       <div className="inner">
         <header className="major">
-          <h2>Experience</h2>
+          <h2>Relevant Projects and Skills</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet
-            eleifend
+            <strong>PVEite | Compress</strong>
             <br />
-            fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus
-            ullamcorper.
+            <strong>AMETank</strong>
+            <br />
+            <strong>
+              ASPEN Exchanger Design and Rating
+            </strong>
           </p>
         </header>
         <ul className="features">
           <li className="icon fa-paper-plane">
-            <h3>Arcu accumsan</h3>
+            <h3>Rahastan Refinery Project</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Detail engineering of <strong>Shell & Tube Heat Exchangers</strong>.
             </p>
           </li>
           <li className="icon solid fa-laptop">
