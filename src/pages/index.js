@@ -1,13 +1,11 @@
 import React from 'react';
-
 import Layout from '../components/Layout';
-
 import Scroll from '../components/Scroll';
-
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import config from '../../config';
+
 const IndexPage = () => (
   <Layout>
     <section id="banner">
@@ -40,31 +38,16 @@ const IndexPage = () => (
             Oil & gas | Chemical | Mining
           </h2>
           <p>
-            Hello, I'm <strong>Fernando Vázquez</strong>. I have been working as <strong>a mechanical engineer</strong> in the <strong>oil and gas industry</strong> (and other sectors) for about <strong>twenty three years</strong>, in almost every stage of the live of a plant (Design, fabrication, inspection, installation and commissioning).
+            Hello, I'm <strong>Fernando Vázquez</strong>. I have been working as <strong>a mechanical engineer</strong> in the <strong>oil and gas industry</strong> (and other sectors) for about <strong>twenty three years</strong>, in almost every stage of the lifetime of a project (Design, fabrication, inspection, installation and commissioning).
           </p>
           <p>
-            I have a lot of experience with mechanical <strong>equipment</strong>. I really enjoy working <strong>at the site</strong>, I mean working in <strong>construction</strong> and learning new things. I also love new <strong>challenges</strong>.
+            I really enjoy working <strong>in construction</strong> and learning new things. I also love new <strong>challenges</strong>.
           </p>
           <p>
             Proficient in mexican and international standards and codes; such as ASME, API, TEMA, and European regulations.
           </p>
         </header>
         <ul className="icons major">
-          {/* <li>
-            <span className="icon fa-gem major style1">
-              <span className="label">Lorem</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon fa-heart major style2">
-              <span className="label">Ipsum</span>
-            </span>
-          </li>
-          <li>
-            <span className="icon solid fa-code major style3">
-              <span className="label">Dolor</span>
-            </span>
-          </li> */}
           {config.socialLinks.map(social => {
             const { style, icon, name, url } = social;
             return (
@@ -89,7 +72,7 @@ const IndexPage = () => (
             EPC projects
           </h2>
           <p>
-            9 years of experience in execution of EPC projects in vearious industries.
+            More than <strong>9 years</strong> of experience in execution of EPC projects in various industries (Oil & Gas, Chemical, Pharma, and Mining).
           </p>
         </div>
       </section>
@@ -102,7 +85,7 @@ const IndexPage = () => (
             Construction and Mechanical Completion
           </h2>
           <p>
-            7 years of experience as mechanical supervisor in mechanical completion and commissioning works; ensuring quality and compliance with deadlines.
+            About <strong>7 years</strong> of experience as mechanical supervisor in mechanical completion and commissioning works; ensuring compliance with the <strong>quality</strong> and <strong>deadlines</strong> requirements.
           </p>
         </div>
       </section>
@@ -112,10 +95,10 @@ const IndexPage = () => (
         </div>
         <div className="content">
           <h2>
-            Construction of Pressure Vessels and Package Equipment
+            Pressure Vessels
           </h2>
           <p>
-            5 years of experience in construction os pressure vessels and package equipment in specialized workshops.
+            I specialized in the desing, construction, inspection and installation of pressure vessels during at least <strong>6 years</strong> I worked for specialized workshops. But, I have been staying <strong>upgraded continuously</strong> due to my activities in <strong>EPC projects</strong> and as a <strong>freelancer</strong>. 
           </p>
         </div>
       </section>
@@ -139,55 +122,54 @@ const IndexPage = () => (
         <header className="major">
           <h2>Relevant Projects and Skills</h2>
           <p>
-            <strong>PVEite | Compress</strong>
+            <strong>PVEite & Compress</strong>
             <br />
-            <strong>AMETank</strong>
+            <strong>AMETank & Tank</strong>
             <br />
-            <strong>
-              ASPEN Exchanger Design and Rating
-            </strong>
+            <strong>ASPEN Exchanger Design and Rating</strong>
+            <br />
+            <strong>Microsoft Office | Advanced user of Excel</strong>
+            <br />
+            <strong>Python & JavaScript</strong>
+            <br />
+            <strong>Agile & Prince2</strong>
           </p>
         </header>
         <ul className="features">
-          <li className="icon fa-paper-plane">
-            <h3>Rahastan Refinery Project</h3>
+          <li className="icon solid fa-paper-plane">
+            <h3>Rahastan Refinery</h3>
             <p>
-              Detail engineering of <strong>Shell & Tube Heat Exchangers</strong>.
+              Detail engineering of <strong>Shell & Tube Heat Exchangers</strong>. Project participation: 2 years.
             </p>
           </li>
-          <li className="icon solid fa-laptop">
-            <h3>Ac Augue Eget</h3>
+          <li className="icon solid fa-paper-plane">
+            <h3>Cementos Progreso</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Supervision of manufacturing, equipment installation, and commissioning of mechanical equipment (<strong>API-650 storage tank, water treatment system, and firefighting system</strong>). Project participation: 1 year.
             </p>
           </li>
-          <li className="icon solid fa-code">
-            <h3>Mus Scelerisque</h3>
+          <li className="icon solid fa-paper-plane">
+            <h3>Thor Químicos de México</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Responsible of the activities of mechanical completion and commissioning of <strong>mechanical equipment</strong> during the construction of two new plants. Project participation: 2 years.
             </p>
           </li>
-          <li className="icon solid fa-headphones-alt">
-            <h3>Mauris Imperdiet</h3>
+          <li className="icon solid fa-paper-plane">
+            <h3>Iquisa Noreste</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Detailed engineering of <strong>static equipment</strong>, including engineering, procurement, and support to construction area. Project participation: more than 1 year.
             </p>
           </li>
-          <li className="icon fa-heart">
-            <h3>Aenean Primis</h3>
+          <li className="icon solid fa-paper-plane">
+            <h3>Refinería Talara</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Detailed engineering of crude oil storage tanks as per <strong>API-650</strong>. Project participation: 6 months.
             </p>
           </li>
-          <li className="icon fa-flag">
-            <h3>Tortor Ut</h3>
+          <li className="icon solid fa-paper-plane">
+            <h3>Nissan Mexicana</h3>
             <p>
-              Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem
-              tincidunt nullam amet leo Aenean ligula consequat consequat.
+              Discipline leader for development of detailed engineering, procurement, and inspection of <strong>static equipment</strong>. Project participation: 6 months.
             </p>
           </li>
         </ul>
@@ -197,21 +179,20 @@ const IndexPage = () => (
     <section id="cta" className="wrapper style4">
       <div className="inner">
         <header>
-          <h2>Arcue ut vel commodo</h2>
+          <h2>Learn More</h2>
           <p>
-            Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet
-            eleifend fringilla.
+            For more information download my CV o see it online.
           </p>
         </header>
         <ul className="actions stacked">
           <li>
             <a href="/#" className="button fit primary">
-              Activate
+              Download
             </a>
           </li>
           <li>
             <a href="/#" className="button fit">
-              Learn More
+              See more
             </a>
           </li>
         </ul>
