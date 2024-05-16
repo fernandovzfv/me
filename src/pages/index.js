@@ -72,7 +72,7 @@ const IndexPage = () => (
             EPC projects
           </h2>
           <p>
-            More than <strong>9 years</strong> of experience in execution of EPC projects in various industries (Oil & Gas, Chemical, Pharma, and Mining).
+            With over <strong>nine years</strong> of experience in <strong>Engineering, Procurement, and Construction (EPC)</strong> projects, I have a wealth of knowledge in key industries that drive our global economy. My expertise spans across the Oil & Gas, Chemical, Pharmaceutical, and Mining sectors, indicating a versatile and robust skill set. This experience not only showcases my ability to deal with complex projects but also my adaptability to diverse working environments and challenges.
           </p>
         </div>
       </section>
@@ -85,7 +85,7 @@ const IndexPage = () => (
             Construction and Mechanical Completion
           </h2>
           <p>
-            About <strong>7 years</strong> of experience as mechanical supervisor in mechanical completion and commissioning works; ensuring compliance with the <strong>quality</strong> and <strong>deadlines</strong> requirements.
+            With my <strong>seven years</strong> of experience in mechanical supervision, I’ve developed a strong skill set in overseeing <strong>mechanical completion and commissioning</strong> works. My role involves ensuring projects meet quality standards and are completed on time. I have a deep understanding of mechanical systems, strong leadership abilities, and a keen eye for detail, which I use to manage and coordinate team efforts. I’m well-versed in safety regulations and enforce them rigorously to maintain a safe working environment. My expertise significantly contributes to the efficiency and success of mechanical projects, as I’m responsible for the critical final stages before the handover or startup of facilities. My experience positions me to tackle complex challenges and lead teams towards successful project completions.
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ const IndexPage = () => (
             Pressure Vessels
           </h2>
           <p>
-            I specialized in the desing, construction, inspection and installation of pressure vessels during at least <strong>6 years</strong> I worked for specialized workshops. But, I have been staying <strong>upgraded continuously</strong> due to my activities in <strong>EPC projects</strong> and as a <strong>freelancer</strong>. 
+            With a robust background in the design, construction, inspection, and installation of <strong>pressure vessels</strong>, my expertise spans over <strong>six years</strong> in specialized workshops. This experience is complemented by my continuous professional development, a critical aspect in the dynamic field of engineering. My involvement in EPC (Engineering, Procurement, and Construction) projects has likely provided me with a comprehensive view of project management and execution, while my <strong>freelance</strong> work has added a versatile edge to my skill set. This combination of structured work environments and self-directed projects positions me well for future opportunities in the industry.
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ const IndexPage = () => (
             Engineering and Start-Up of Package Equipment
           </h2>
           <p>
-            2 years of experience in engineering and start-up of package equipment; ensuring its optimal operation.
+            With <strong>two years</strong> of experience in engineering and the start-up of <strong>packaged equipment</strong>, I have a solid foundation in overseeing the complex process of bringing new systems online. My expertise involves planning and execution to ensure that all components work harmoniously and meet design specifications. I oversee the commissioning phase, crucial for verifying the functionality of equipment without process chemicals, and the start-up phase, where chemicals are introduced, and performance testing begins.
           </p>
         </div>
       </section>
