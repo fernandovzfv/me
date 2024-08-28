@@ -4,6 +4,7 @@ import Scroll from '../components/Scroll';
 import pic1 from '../assets/images/pic01.jpg';
 import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
+import pic5 from '../assets/images/pic05.jpg';
 import config from '../../config';
 
 const IndexPage = () => (
@@ -104,7 +105,7 @@ const IndexPage = () => (
       </section>
       <section className="spotlight">
         <div className="image">
-          <img src={pic1} alt="" />
+          <img src={pic5} alt="" />
         </div>
         <div className="content">
           <h2>
