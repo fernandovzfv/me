@@ -4,7 +4,7 @@
   "description": "Gatsby.js V5 starter template based on Spectral by HTML5 UP",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fernandovzfv/spectral.git"
+    "url": "https://github.com/fernandovzfv/me"
   },
   "author": {
     "name": "Anubhav Srivastava",
@@ -46,5 +46,5 @@
   "bugs": {
     "url": "https://github.com/anubhavsrivastava/gatsby-starter-spectral/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-spectral#readme"
+  "homepage": "https://github.com/fernandovzfv/me"
 }
