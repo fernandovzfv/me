@@ -38,7 +38,7 @@ const ContactPage = () => (
             borderRadius: '0.25rem',
             border: '1px solid #ffeeba'
           }}>
-            <strong>Note:</strong> This form is not yet implemented. please send an Email insted of (see below).
+            <strong>Note:</strong> As yet, this form is not in use. Kindly submit an email instead of it (see below).
           </div>
 
         </div>

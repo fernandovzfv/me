@@ -19,7 +19,7 @@ const BlogPage = () => (
             borderRadius: '0.25rem',
             border: '1px solid #ffeeba'
           }}>
-            <strong>Note:</strong> Our blog is currently under construction. We're working hard to bring you interesting and informative content. Please check back soon!.
+            <strong>Note:</strong> My blog is currently under construction. I'm working hard to bring you interesting and informative content. Please check back soon!.
           </div>
         </div>
       </section>
