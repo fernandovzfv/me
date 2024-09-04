@@ -16,19 +16,19 @@ module.exports = {
       style: 'brands',
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/fernandovzvfv',
+      url: 'https://github.com/fernandovzfv',
     },
     {
       style: 'brands',
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/fernandovzfv',
+      url: 'https://x.com/Fernandovzfv',
     },
     {
       style: 'brands',
       icon: 'fa-linkedin',
       name: 'Linkedin',
-      url: 'https://linkedin.com/fernandovzfv',
+      url: 'https://www.linkedin.com/in/fernandovzfv',
     },
     {
       style: 'solid',
