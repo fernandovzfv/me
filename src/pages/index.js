@@ -6,6 +6,7 @@ import pic2 from '../assets/images/pic02.jpg';
 import pic3 from '../assets/images/pic03.jpg';
 import pic5 from '../assets/images/pic05.jpg';
 import config from '../../config';
+import { Link } from 'gatsby';
 
 const IndexPage = () => (
   <Layout>
@@ -179,9 +180,9 @@ const IndexPage = () => (
         </header>
         <ul className="actions stacked">
           <li>
-            <a href="https://tvexvlhwcdqochotynah.supabase.co/storage/v1/object/public/cv/CV-2023-11_FERNANDO%20VAZQUEZ_EN.pdf" className="button fit primary">
-              Download CV
-            </a>
+            <Link to="/cv" className="button fit primary">
+              CV
+            </Link>
           </li>
         </ul>
       </div>
