@@ -12,7 +12,7 @@ export const translations: Record<string, Record<string, string>> = {
     valuesTitle2: "Pressure Vessels",
     valuesDesc2: "Specialized in pressure vessels (design, construction, inspection, installation) with 6+ years in workshops and EPC projects. Continuous professional development and freelance work provide a versatile edge.",
     valuesTitle3: "Shell & Tube Heat Exchangers",
-    valuesDesc3: "EDeep expertise in shell and tube heat exchanger design, analysis, and application, coupled with a thorough understanding of principles and best practices throughout the entire lifecycle.",
+    valuesDesc3: "Deep expertise in shell and tube heat exchanger design, analysis, and application, coupled with a thorough understanding of principles and best practices throughout the entire lifecycle.",
     valuesTitle4: "Package Equipment",
     valuesDesc4: "Experience in engineering and the start-up of packaged equipment, establishing a solid foundation in bringing complex systems online. Expertise spans planning, execution, commissioning (without chemicals), and start-up (with chemicals and performance testing).",
     skills: "Skills",
