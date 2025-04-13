@@ -46,20 +46,23 @@ const HeroSection = () => {
             <span className="relative">
               <span className="inline-block">{t('iam', language)}</span>
               {" "}
-              <span className="inline-block text-brand-blue transform font-extrabold" 
-                     style={{ 
+              <span className="inline-block text-brand-blue transform font-extrabold"
+                     style={{
                        transform: `rotate(${rotation}deg) scale(${scale})`,
                        transition: 'transform 0.1s ease-out',
                      }}>F</span>
               <span className="inline-block">ernando </span>
-              <span className="inline-block text-brand-blue transform font-extrabold" 
-                     style={{ 
-                       transform: `rotate(${rotation}deg) scale(${scale})`,
-                       transition: 'transform 0.1s ease-out',
-                     }}>V</span>
-              <span className="inline-block">ázquez</span></span>
+              {/* Wrap "V" and "ázquez" together */}
+              <span className="inline-block whitespace-nowrap">
+                <span className="inline-block text-brand-blue transform font-extrabold"
+                       style={{
+                         transform: `rotate(${rotation}deg) scale(${scale})`,
+                         transition: 'transform 0.1s ease-out',
+                       }}>V</span>
+                <span className="inline-block">ázquez</span>
+              </span>
+            </span>
           </h1>
-          
           <p className="text-xl md:text-2xl mt-6 text-foreground/90 animate-fade-in backdrop-blur-sm inline-block" style={{ animationDelay: '0.2s' }}>
             {t('heroDescription', language)}
           </p>

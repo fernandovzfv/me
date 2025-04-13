@@ -46,11 +46,17 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center container-padding">
         <Link to="/" className="text-2xl font-bold text-foreground">
           <span className="relative">
+            {/* F */}
             <span className="inline-block text-brand-blue transform -rotate-12 font-extrabold">F</span>
-            <span className="inline-block">ernando </span>
+            {/* "ernando " - hidden by default, shown from md breakpoint onwards */}
+            <span className="hidden md:inline-block">ernando </span>
+            {/* V */}
             <span className="inline-block text-brand-blue transform -rotate-12 font-extrabold">V</span>
-            <span className="inline-block">ázquez</span></span>
+            {/* "ázquez" - hidden by default, shown from md breakpoint onwards */}
+            <span className="hidden md:inline-block">ázquez</span>
+          </span>
         </Link>
+        
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">

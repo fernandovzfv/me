@@ -23,7 +23,7 @@ const Footer = () => {
               </span>
             </a>
             
-            <p className="mt-1 text-foreground/70 text-sm">
+            <p className="mt-1 text-foreground/70 text-sm text-center md:text-left">
               {language === 'en' ? 'Static | Heat Transfer | Package Equipment Specialist' : 'Equipo Estático | Equipo de Transferencia de Calor | Equipos Paquete'}
             </p>
           </div>
