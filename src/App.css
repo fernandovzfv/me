@@ -1,0 +1,69 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Dark mode compatibility */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    color-scheme: dark;
+  }
+  
+  html:not([data-theme]) body {
+    background-color: #222;
+    color: #fff;
+  }
+  
+  /* Force particles visibility in dark mode */
+  html:not([data-theme]) .particle-container canvas {
+    opacity: 1 !important;
+    filter: brightness(1.5) !important;
+  }
+}
+
+/* Explicit handling for dark reader extensions */
+html[data-darkreader-scheme="dark"] .particle-container canvas,
+html.dark .particle-container canvas,
+html[data-theme="dark"] .particle-container canvas {
+  opacity: 1 !important;
+  filter: brightness(1.5) !important;
+}
