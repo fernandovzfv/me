@@ -61,7 +61,7 @@ const AboutSection = () => {
         const { data: profileData } = await supabase
           .storage
           .from('pictures')
-          .getPublicUrl('foto-fv.JPG');
+          .getPublicUrl('foto-fv-2.JPG');
           
         if (profileData?.publicUrl) {
           setProfileImageUrl(profileData.publicUrl);
