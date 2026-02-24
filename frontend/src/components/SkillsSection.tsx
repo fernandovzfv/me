@@ -8,34 +8,20 @@ import { t } from '@/lib/translations';
 import LogoLoop, { LogoItem } from './LogoLoop';
 import { useTheme } from './ThemeProvider';
 
-// Custom logo component with text fallback
-const LogoWithFallback = ({ name, src }: { name: string; src: string }) => {
-  const [imageError, setImageError] = React.useState(false);
+// Text-based logo badge component
+const LogoBadge = ({ name }: { name: string }) => {
   const { theme } = useTheme();
   
-  if (imageError) {
-    return (
-      <span 
-        className={`font-bold text-lg px-4 py-2 rounded-lg ${
-          theme === 'dark' 
-            ? 'bg-white/10 text-white/80' 
-            : 'bg-black/10 text-black/80'
-        }`}
-      >
-        {name}
-      </span>
-    );
-  }
-  
   return (
-    <img
-      src={src}
-      alt={name}
-      title={name}
-      className={`h-10 w-auto object-contain ${theme === 'dark' ? 'brightness-0 invert opacity-70' : 'opacity-80'}`}
-      onError={() => setImageError(true)}
-      loading="lazy"
-    />
+    <span 
+      className={`font-semibold text-base px-5 py-2.5 rounded-lg transition-all duration-300 whitespace-nowrap ${
+        theme === 'dark' 
+          ? 'bg-white/10 text-white/90 hover:bg-white/20' 
+          : 'bg-black/5 text-black/80 hover:bg-black/10'
+      }`}
+    >
+      {name}
+    </span>
   );
 };
 
