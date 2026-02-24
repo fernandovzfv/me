@@ -56,56 +56,20 @@ const SkillsSection = () => {
     "Documentación Técnica"
   ] : otherSkills;
 
-  // Software logos for the logo loop - using node items for better control
+  // Software logos for the logo loop - using consistent text badges
   const softwareLogos: LogoItem[] = [
-    {
-      node: <LogoWithFallback name="AutoCAD" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Autodesk_Logo.svg/330px-Autodesk_Logo.svg.png" />,
-      title: "AutoCAD"
-    },
-    {
-      node: <LogoWithFallback name="PVElite" src="https://hexagon.com/content/dam/hexagon/hexagon-newsite-portfolio/products/pv-elite/hexagon-pv-elite-logo.png" />,
-      title: "PVElite"
-    },
-    {
-      node: <LogoWithFallback name="AMETank" src="https://www.technosoft.com/sites/default/files/2022-01/AMETank-Logo.png" />,
-      title: "AMETank"
-    },
-    {
-      node: <LogoWithFallback name="Python" src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" />,
-      title: "Python"
-    },
-    {
-      node: <LogoWithFallback name="JavaScript" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />,
-      title: "JavaScript"
-    },
-    {
-      node: <LogoWithFallback name="Excel" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png" />,
-      title: "Microsoft Excel"
-    },
-    {
-      node: <LogoWithFallback name="Power BI" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/600px-New_Power_BI_Logo.svg.png" />,
-      title: "Power BI"
-    },
-    {
-      node: <LogoWithFallback name="ASPEN EDR" src="https://www.aspentech.com/content/dam/aspentech/images/logo/aspentech-logo.png" />,
-      title: "ASPEN EDR"
-    },
-    {
-      node: <LogoWithFallback name="HTRI" src="https://www.htri.net/themes/custom/htri/logo.png" />,
-      title: "HTRI"
-    },
-    {
-      node: <LogoWithFallback name="Hexagon Tank" src="https://hexagon.com/content/dam/hexagon/hexagon-newsite-portfolio/products/tank/hexagon-tank-logo.png" />,
-      title: "Hexagon Tank"
-    },
-    {
-      node: <LogoWithFallback name="OnShape" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Onshape_logo.svg/512px-Onshape_logo.svg.png" />,
-      title: "OnShape"
-    },
-    {
-      node: <LogoWithFallback name="BricsCAD" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BricsCAD_logo.svg/512px-BricsCAD_logo.svg.png" />,
-      title: "BricsCAD"
-    }
+    { node: <LogoBadge name="AutoCAD" />, title: "AutoCAD" },
+    { node: <LogoBadge name="PVElite" />, title: "PVElite" },
+    { node: <LogoBadge name="AMETank" />, title: "AMETank" },
+    { node: <LogoBadge name="Python" />, title: "Python" },
+    { node: <LogoBadge name="JavaScript" />, title: "JavaScript" },
+    { node: <LogoBadge name="Excel" />, title: "Microsoft Excel" },
+    { node: <LogoBadge name="Power BI" />, title: "Power BI" },
+    { node: <LogoBadge name="ASPEN EDR" />, title: "ASPEN EDR" },
+    { node: <LogoBadge name="HTRI" />, title: "HTRI" },
+    { node: <LogoBadge name="Hexagon Tank" />, title: "Hexagon Tank" },
+    { node: <LogoBadge name="OnShape" />, title: "OnShape" },
+    { node: <LogoBadge name="BricsCAD" />, title: "BricsCAD" }
   ];
 
   return (
