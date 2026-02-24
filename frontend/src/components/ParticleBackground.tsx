@@ -3,7 +3,6 @@ import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import type { Engine } from "tsparticles-engine";
-import { loadPolygonPath } from "tsparticles-path-polygon";
 import { useTheme } from './ThemeProvider';
 
 const ParticleBackground = () => {
@@ -11,7 +10,6 @@ const ParticleBackground = () => {
   
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadFull(engine);
-    await loadPolygonPath(engine);
   }, []);
 
   // Define color variables based on theme
@@ -63,18 +61,10 @@ const ParticleBackground = () => {
               value: particleOpacity,
             },
             shape: {
-              type: "path",
-              options: {
-                path: {
-                  // Hexagon path
-                  data: "M41.9,29.5L25,37.9L8.1,29.5v-17L25,4.1l16.9,8.4V29.5z",
-                  // Scale the shape to adjust its size
-                  scale: 1,
-                },
-              },
+              type: "circle",
             },
             size: {
-              value: { min: 5, max: 15 },
+              value: { min: 2, max: 6 },
             },
             links: {
               color: linkColor,
