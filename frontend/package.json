@@ -6,6 +6,7 @@
   "homepage": "https://fernandovzfv.github.io/me/",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
