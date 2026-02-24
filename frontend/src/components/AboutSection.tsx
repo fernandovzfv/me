@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useLanguage } from './LanguageProvider';
 import { t } from '@/lib/translations';
 import { supabase } from '@/integrations/supabase/client';
+import TiltedCard from './TiltedCard';
 
 const AboutSection = () => {
   const { language } = useLanguage();
@@ -82,19 +83,25 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
           {/* Left column with image */}
           <div className="lg:col-span-2 flex justify-center">
-            <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden rounded-md border-4 border-brand-blue/20 shadow-xl">
-              {profileImageUrl ? (
-                <img
-                  src={profileImageUrl}
-                  alt="Fernando Vázquez profile"
-                  className="w-full h-full object-cover"
-                />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center bg-muted">
-                  <p className="text-muted-foreground">Loading profile image...</p>
-                </div>
-              )}
-            </div>
+            {profileImageUrl ? (
+              <TiltedCard
+                imageSrc={profileImageUrl}
+                altText="Fernando Vázquez profile"
+                captionText="Fernando Vázquez"
+                containerHeight="700px"
+                containerWidth="100%"
+                imageHeight="650px"
+                imageWidth="100%"
+                scaleOnHover={1.05}
+                rotateAmplitude={12}
+                showMobileWarning={false}
+                showTooltip={true}
+              />
+            ) : (
+              <div className="w-full h-[500px] md:h-[600px] lg:h-[700px] flex items-center justify-center bg-muted rounded-[15px]">
+                <p className="text-muted-foreground">Loading profile image...</p>
+              </div>
+            )}
           </div>
           
           {/* Right column with content */}
