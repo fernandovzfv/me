@@ -5,9 +5,12 @@ import { Separator } from '@/components/ui/separator';
 import { CheckCircle2 } from 'lucide-react';
 import { useLanguage } from './LanguageProvider';
 import { t } from '@/lib/translations';
+import LogoLoop, { LogoItem } from './LogoLoop';
+import { useTheme } from './ThemeProvider';
 
 const SkillsSection = () => {
   const { language } = useLanguage();
+  const { theme } = useTheme();
   
   const technicalSkills = [
     { name: "EPC Projects", level: 90 },
@@ -35,6 +38,70 @@ const SkillsSection = () => {
     "Metodologías Ágiles",
     "Documentación Técnica"
   ] : otherSkills;
+
+  // Software logos for the logo loop
+  const softwareLogos: LogoItem[] = [
+    {
+      src: "/logos/autodesk.png",
+      alt: "AutoCAD",
+      title: "AutoCAD"
+    },
+    {
+      src: "/logos/pvelite.png",
+      alt: "PVElite",
+      title: "PVElite"
+    },
+    {
+      src: "http://ametank.technosoft.com/wp-content/uploads/AMETank-Logo.png",
+      alt: "AMETank",
+      title: "AMETank"
+    },
+    {
+      src: "/logos/python.png",
+      alt: "Python",
+      title: "Python"
+    },
+    {
+      src: "/logos/javascript.png",
+      alt: "JavaScript",
+      title: "JavaScript"
+    },
+    {
+      src: "/logos/excel.png",
+      alt: "Microsoft Excel",
+      title: "Microsoft Excel"
+    },
+    {
+      src: "/logos/powerbi.png",
+      alt: "Power BI",
+      title: "Power BI"
+    },
+    {
+      src: "/logos/aspentech.png",
+      alt: "ASPEN EDR",
+      title: "ASPEN EDR"
+    },
+    {
+      src: "/logos/htri.png",
+      alt: "HTRI",
+      title: "HTRI"
+    },
+    {
+      src: "/logos/hexagon-tank.png",
+      alt: "Hexagon Tank",
+      title: "Hexagon Tank"
+    },
+    {
+      src: "/logos/onshape.svg",
+      alt: "OnShape",
+      title: "OnShape"
+    },
+    {
+      src: "/logos/bricsys.svg",
+      alt: "BricsCAD",
+      title: "BricsCAD"
+    }
+  ];
 
   return (
     <section id="skills" className="section-padding">
@@ -92,6 +159,27 @@ const SkillsSection = () => {
                 <Progress value={100} className="h-2" />
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Software & Tools Logo Loop */}
+        <div className="mt-16">
+          <h3 className="text-2xl font-bold mb-8 text-center">
+            {language === 'es' ? 'Software y Herramientas' : 'Software & Tools'}
+          </h3>
+          <div className="relative">
+            <LogoLoop
+              logos={softwareLogos}
+              speed={60}
+              direction="left"
+              logoHeight={48}
+              gap={64}
+              pauseOnHover={true}
+              fadeOut={true}
+              scaleOnHover={true}
+              ariaLabel="Software and tools logos"
+              className={theme === 'dark' ? '[--logoloop-fadeColorAuto:hsl(222.2,84%,4.9%)]' : '[--logoloop-fadeColorAuto:hsl(210,40%,98%)]'}
+            />
           </div>
         </div>
       </div>
