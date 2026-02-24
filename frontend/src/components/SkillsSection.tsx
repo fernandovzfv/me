@@ -42,62 +42,57 @@ const SkillsSection = () => {
   // Software logos for the logo loop
   const softwareLogos: LogoItem[] = [
     {
-      src: "/logos/autodesk.png",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Autodesk_Logo.svg/330px-Autodesk_Logo.svg.png",
       alt: "AutoCAD",
       title: "AutoCAD"
     },
     {
-      src: "/logos/pvelite.png",
+      src: "https://hexagon.com/content/dam/hexagon/hexagon-newsite-portfolio/products/pv-elite/hexagon-pv-elite-logo.png",
       alt: "PVElite",
       title: "PVElite"
     },
     {
-      src: "http://ametank.technosoft.com/wp-content/uploads/AMETank-Logo.png",
-      alt: "AMETank",
-      title: "AMETank"
-    },
-    {
-      src: "/logos/python.png",
+      src: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
       alt: "Python",
       title: "Python"
     },
     {
-      src: "/logos/javascript.png",
+      src: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
       alt: "JavaScript",
       title: "JavaScript"
     },
     {
-      src: "/logos/excel.png",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png",
       alt: "Microsoft Excel",
       title: "Microsoft Excel"
     },
     {
-      src: "/logos/powerbi.png",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/600px-New_Power_BI_Logo.svg.png",
       alt: "Power BI",
       title: "Power BI"
     },
     {
-      src: "/logos/aspentech.png",
+      src: "https://www.aspentech.com/content/dam/aspentech/images/logo/aspentech-logo.png",
       alt: "ASPEN EDR",
       title: "ASPEN EDR"
     },
     {
-      src: "/logos/htri.png",
+      src: "https://www.htri.net/themes/custom/htri/logo.png",
       alt: "HTRI",
       title: "HTRI"
     },
     {
-      src: "/logos/hexagon-tank.png",
+      src: "https://hexagon.com/content/dam/hexagon/hexagon-newsite-portfolio/products/tank/hexagon-tank-logo.png",
       alt: "Hexagon Tank",
       title: "Hexagon Tank"
     },
     {
-      src: "/logos/onshape.svg",
+      src: "https://cdn.worldvectorlogo.com/logos/onshape.svg",
       alt: "OnShape",
       title: "OnShape"
     },
     {
-      src: "/logos/bricsys.svg",
+      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/BricsCAD_logo.svg/512px-BricsCAD_logo.svg.png",
       alt: "BricsCAD",
       title: "BricsCAD"
     }
