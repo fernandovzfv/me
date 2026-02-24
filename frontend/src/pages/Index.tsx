@@ -9,14 +9,14 @@ import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import { LanguageProvider } from '@/components/LanguageProvider';
-import ParticleBackground from '@/components/ParticleBackground';
+import WavesBackground from '@/components/WavesBackground';
 
 const Index = () => {
   return (
     <ThemeProvider>
       <LanguageProvider>
         <div className="min-h-screen">
-          <ParticleBackground />
+          <WavesBackground />
           <Navbar />
           <HeroSection />
           <AboutSection />
