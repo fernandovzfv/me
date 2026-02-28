@@ -17,9 +17,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Check for saved language preference
     const savedLanguage = localStorage.getItem('language') as Language;
-    
+
     if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'es')) {
       setLanguage(savedLanguage);
+    } else {
+      setLanguage('en');
     }
   }, []);
 

@@ -14,16 +14,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>('dark'); // Default is dark
 
   useEffect(() => {
-    // Check for saved theme preference or use system preference
+    // Check for saved theme preference or use dark as default
     const savedTheme = localStorage.getItem('theme') as Theme;
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
       setTheme(savedTheme);
-    } else if (prefersDark) {
+    } else {
+      // Default to dark mode for new visitors
       setTheme('dark');
     }
-    // If no saved theme and no system preference for dark, default to dark (already set in state)
   }, []);
 
   useEffect(() => {
@@ -37,7 +36,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       document.documentElement.setAttribute('data-theme', 'light');
       document.documentElement.style.colorScheme = 'light';
     }
-    
+
     // Save theme preference
     localStorage.setItem('theme', theme);
   }, [theme]);

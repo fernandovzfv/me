@@ -7,26 +7,20 @@ import SkillsSection from '@/components/SkillsSection';
 import ProjectsSection from '@/components/ProjectsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { ThemeProvider } from '@/components/ThemeProvider';
-import { LanguageProvider } from '@/components/LanguageProvider';
 import WavesBackground from '@/components/WavesBackground';
 
 const Index = () => {
   return (
-    <ThemeProvider>
-      <LanguageProvider>
-        <div className="min-h-screen">
-          <WavesBackground />
-          <Navbar />
-          <HeroSection />
-          <AboutSection />
-          <SkillsSection />
-          <ProjectsSection />
-          <ContactSection />
-          <Footer />
-        </div>
-      </LanguageProvider>
-    </ThemeProvider>
+    <div className="min-h-screen">
+      <WavesBackground />
+      <Navbar />
+      <HeroSection />
+      <AboutSection />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactSection />
+      <Footer />
+    </div>
   );
 };
 

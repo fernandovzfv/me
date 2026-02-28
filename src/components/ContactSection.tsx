@@ -4,7 +4,6 @@ import { useLanguage } from './LanguageProvider';
 import { t } from '@/lib/translations';
 import ContactInfo from './contact/ContactInfo';
 import SocialLinks from './contact/SocialLinks';
-import ContactForm from './contact/ContactForm';
 
 const ContactSection = () => {
   const { language } = useLanguage();
@@ -19,15 +18,9 @@ const ContactSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <div>
-            <ContactInfo />
-            <SocialLinks />
-          </div>
-
-          <div>
-            <ContactForm />
-          </div>
+        <div className="max-w-xl mx-auto flex flex-col items-center">
+          <ContactInfo />
+          <SocialLinks />
         </div>
       </div>
     </section>
